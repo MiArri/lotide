@@ -10,8 +10,8 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 const assertArraysEqual = function(eqArrays) {
-  eqArrays === true ? console.log("Assertion passed") : 
-  console.log("Assertion failed");
+  eqArrays === true ? console.log("Assertion passed") :
+    console.log("Assertion failed");
 };
 
 assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]));
