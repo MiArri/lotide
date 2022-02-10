@@ -6,15 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 const results = {};
-const countLetters = function(str){
+const countLetters = function(str) {
   for (const letter of str) {
-    if (results[letter]) {
-      results[letter] += 1;
-    } else {
-      results[letter] = 1;
+    if (results[letter] !== " ") {
+      if (results[letter]) {
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
     }
   }
   return results;
 };
 
-console.log(countLetters('LHL')); 
+console.log(countLetters('L HL'));
