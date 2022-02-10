@@ -19,4 +19,12 @@ const countLetters = function(str) {
   return results;
 };
 
-console.log(countLetters('L HL'));
+
+const counts = countLetters("hello world");
+assertEqual(counts.h, 1);
+assertEqual(counts.e, 1);
+assertEqual(counts.l, 3);
+assertEqual(counts.o, 2);
+assertEqual(counts.w, 1);
+assertEqual(counts.r, 1);
+assertEqual(counts.d, 1);
