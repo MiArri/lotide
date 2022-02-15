@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@elena_chernikova/lotide",
   "version": "1.0.0",
-  "description": "\"library of small functions\"",
+  "description": "library of small functions",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MiArri/lotide.git"
+    "url": "git@github.com:MiArri/lotide.git"
   },
   "keywords": [
-    "\"library\"",
-    "\"function\"",
-    "\"lotide\""
+    "library",
+    "function",
+    "lotide"
   ],
   "author": "Elena Chernikova",
   "license": "ISC",
