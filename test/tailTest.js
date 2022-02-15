@@ -1,15 +1,15 @@
 const assert = require('chai').assert;
-const head   = require('../tail');
+const tail = require('../tail');
 
-const words = ["Hello", "Lighthouse", "Labs"];
+const words = ["Yo Yo", "Lighthouse", "Labs"];
 
 describe("#tail", () => {
   it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.deepEqual(head(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
   });
 
-  it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.deepEqual(head(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
   });
 
   it("doesn't mutate the original  array", () => {
