@@ -13,6 +13,6 @@ describe("#tail", () => {
   });
 
   it("doesn't mutate the original  array", () => {
-    assert.equal(words.length, 3);
+    assert.strictEqual(words.length, 3);
   });
 });
